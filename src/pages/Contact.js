@@ -1,16 +1,16 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 
-function Home () {
+function Contact () {
 
     return (
             
            <div className='mainhome'>
                <Navbar/>
-                Hola soy Main
+                Hola soy Contact
            </div>
     
     )
     }
     
-export default Home;
+export default Contact;

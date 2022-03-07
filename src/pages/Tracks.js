@@ -1,16 +1,16 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 
-function Home () {
+function Tracks () {
 
     return (
             
            <div className='mainhome'>
                <Navbar/>
-                Hola soy Main
+                Hola soy Circuitos
            </div>
     
     )
     }
     
-export default Home;
+export default Tracks;
