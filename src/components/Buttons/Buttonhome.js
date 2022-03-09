@@ -1,11 +1,14 @@
 import React from 'react';
+import f1logo from './f1logo.png';
+
+
 
 function ButtonHome () {
 
     return (
             
-        <a class="buttonhome" href="https://www.freecodecamp.org/">Home a casita
-            <img class="homelogo" src='.src/assets/f1logo.png'/>
+        <a class="buttonhome" href="https://www.freecodecamp.org/">
+            <img class="homelogo" src={f1logo}/>
         </a>  
     
     )
