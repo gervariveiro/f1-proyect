@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/Navbar/Navbar.js';
 import { useEffect, useState } from 'react';
 import getDrivers from '../api/api';
 import ListDrivers from '../components/listDrivers';

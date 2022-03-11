@@ -1,5 +1,5 @@
 import React from 'react';
-import ButtonHome from './Buttons/Buttonhome';
+import ButtonHome from '../Buttons/Buttonhome';
 
 function Navbar () {
 
@@ -7,12 +7,12 @@ function Navbar () {
             
         <div className='navbar'>
             <span class="nav-bar">
-            <i class="fas fa-bars" id="btnMenu"></i>
-            <a href="home.html"> Hola soy home2<img class="logohome2" src=""/></a>
+            <FontAwesomeIcon icon={["fas fa-bars", id="btnMenu"] } />
+            <ButtonHome/>
         </span>
         <nav class="main-nav">
-            <ButtonHome/>
             <ul class="menu" id="menu">
+                <ButtonHome/>
                 <li class="menu__item">
                     <a href="" class="menu__link">Equipos</a>
                 </li>
@@ -27,6 +27,7 @@ function Navbar () {
                 </li>
             </ul>
         </nav>
+        <script src="menu.js"></script>
         </div>
     
     )
