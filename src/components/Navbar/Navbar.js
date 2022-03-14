@@ -1,14 +1,26 @@
 import React from 'react';
 import ButtonHome from '../Buttons/Buttonhome';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faBars} from '@fortawesome/free-solid-svg-icons';
+
+
+const btnMenu = document.querySelector("#btnMenu");
+const menu= document.querySelector("#menu");
+btnMenu.addEventListener("click", function(){
+    menu.classList.toggle("mostrar");
+});
 
 function Navbar () {
 
     return (
-            
+
+
         <div className='navbar'>
             <span class="nav-bar">
-            <FontAwesomeIcon icon={["fas fa-bars", id="btnMenu"] } />
             <ButtonHome/>
+            <div className="menuicon" id="btnMenu">
+                <FontAwesomeIcon icon={faBars} />
+            </div>            
         </span>
         <nav class="main-nav">
             <ul class="menu" id="menu">

@@ -9,8 +9,8 @@
 
   
   .homelogo{
-    height:130px;
-    width: 130px;
+    height:120px;
+    width: 120px;
     margin-left: 50px;
     padding-bottom: 20px;
   }
@@ -37,7 +37,7 @@
     background: rgb(252, 80, 28);
     height: 100px;
     width: 100%;
-    margin-left: -130%;
+    margin-left: -150%;
     transition: all 0.5s;
     font-family: 'PT Sans', sans-serif;
     font-size:large;
