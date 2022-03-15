@@ -4,11 +4,11 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faBars} from '@fortawesome/free-solid-svg-icons';
 
 
-const btnMenu = document.querySelector("#btnMenu");
+/*const btnMenu = document.querySelector("#btnMenu");
 const menu= document.querySelector("#menu");
 btnMenu.addEventListener("click", function(){
     menu.classList.toggle("mostrar");
-});
+});*/
 
 function Navbar () {
 

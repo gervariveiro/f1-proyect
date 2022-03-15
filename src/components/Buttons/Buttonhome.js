@@ -7,8 +7,8 @@ function ButtonHome () {
 
     return (
             
-        <a class="buttonhome" href="https://www.freecodecamp.org/">
-            <img class="homelogo" src={f1logo}/>
+        <a className="buttonhome" href="https://www.freecodecamp.org/">
+            <img className="homelogo" src={f1logo}/>
         </a>  
     
     )
