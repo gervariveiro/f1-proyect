@@ -35,13 +35,13 @@ function Home () {
                 </ul>
                <ul className='noticias'>
                    <li>
-                       <a href='/formula2022'>
+                       <a href='/RevoF1'>
                             <h4>La revolución del siglo en la F1</h4>
                             <img className='f12022foto' src={f12022}/>
                         </a>
                    </li>
                    <li>
-                       <a href='/alonso'>
+                       <a href='/Alonsopage'>
                             <h4>El hito que igualará Alonso esta temporada</h4>
                             <img className='alonsofoto' src={Alonso}/>
                         </a>

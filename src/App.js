@@ -7,7 +7,8 @@ import Drivers from './pages/Drivers';
 import Login from './pages/Login';
 import Tracks from './pages/Tracks';
 import Sains from './pages/Sains';
-
+import Alonsopage from './pages/Alonsopage';
+import RevoF1 from './pages/RevoF1';
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
             <Route path="Login" element={<Login />} />
             <Route path="Contact" element={<Contact />} />
             <Route path="Sains" element={<Sains />} />
+            <Route path="Alonsopage" element={<Alonsopage />} />
+            <Route path="RevoF1" element={<RevoF1 />} />
           </Routes>
       </BrowserRouter>
     </div>

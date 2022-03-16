@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 *{
   margin: 0;
@@ -35,7 +35,7 @@
 .menu{
     display: flex;
     flex-direction: row;
-    background: rgb(252, 80, 28);
+    background: rgb(252, 45, 28);
     height: 100px;
     width: 100%;
     margin-left: -150%;
@@ -74,7 +74,7 @@
 }
 
 .submenu, .menu__link{
-    background: rgb(252, 80, 28);
+    background: rgb(252, 45, 28);
     padding-left: 25px;
 }
 
@@ -210,6 +210,8 @@ a:visited { text-decoration:none;
 .Sainstext p{
     margin: 30px 10% 30px 10%;
     text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    line-height: 30px;
 }
 
 .Sainstext h4{
@@ -217,3 +219,21 @@ a:visited { text-decoration:none;
     font-family: 'PT Sans', sans-serif;
     font-size: large;
 }
+
+/*-----------------Alonso-----------------------------*/
+
+.mainalonso{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'PT Sans', sans-serif;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.alonsofoto{
+    height: 550px;
+    width: 850px;
+}
+
