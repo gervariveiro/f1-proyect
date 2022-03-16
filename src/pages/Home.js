@@ -14,7 +14,7 @@ function Home () {
            <div className='containerhome'>
                <Navbar/>
                <section className='mainhome'>
-                    <a href='/carlossains'>
+                    <a href='/Sains'>
                     <h1>Carlos Sains el "Outsider"</h1>
                     <img className='portadafoto' src={Portada}/>
                     <p>Sains en Bahréin</p>

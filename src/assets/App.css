@@ -201,6 +201,19 @@ a:visited { text-decoration:none;
     width: 100%;
     background: rgb(252, 45, 28);
     font-family: 'PT Sans', sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     color: white;
+}
+
+/*-------------------Sains----------------------------*/
+
+.Sainstext p{
+    margin: 30px 10% 30px 10%;
+    text-align: justify;
+}
+
+.Sainstext h4{
+    margin-left: 12%;
+    font-family: 'PT Sans', sans-serif;
+    font-size: large;
 }
