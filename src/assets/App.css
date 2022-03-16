@@ -7,10 +7,11 @@
   box-sizing: border-box;
   }
 
-  
+/*----------------------------------Navbar--------------------------------*/
   .homelogo{
-    height:120px;
-    width: 120px;
+    height:110px;
+    width: 115px;
+    margin-top: 5px;
     margin-left: 50px;
     padding-bottom: 20px;
   }
@@ -73,7 +74,7 @@
 }
 
 .submenu, .menu__link{
-    background: rgb(252, 80, 28);;
+    background: rgb(252, 80, 28);
     padding-left: 25px;
 }
 
@@ -111,6 +112,95 @@
         visibility: visible;
     }
 
+}
+a:link { text-decoration:none;
+ } 
+ 
+a:visited { text-decoration:none;
+};
 
 
+/*------------------------Home---------------------*/
+
+/* PARA QUITAR DECORATION DE LOS LINKS a:link { text-decoration:none; } a:visited { text-decoration:none; }*/
+
+
+.mainhome{
+    text-decoration: none;
+    text-decoration-style:none ;
+}
+
+.mainhome a{
+    color: black;
+}
+
+.mainhome h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 20px 0px;
+    font-family: 'PT Sans', sans-serif;
+    
+}
+
+.mainhome img{
+    display: block;
+    margin-left: 5%;
+}
+
+.mainhome h4 {
+    display: block;
+    margin-left: 12%;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 600;
+}
+
+.mainhome p{
+    display: block;
+    margin-left: 5%;
+    padding: 10px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.videoslista{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    padding: 50px;
+    list-style: none;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.noticias{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 5%;
+}
+
+.noticias a{
+    color: black;
+}
+
+.noticias img{
+    height: 350px;
+    width: 550px;
+    margin-top: 5%;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.footer{
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    height: 45px;
+    width: 100%;
+    background: rgb(252, 45, 28);
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 600;
+    color: white;
 }
