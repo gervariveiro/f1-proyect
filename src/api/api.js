@@ -1,9 +1,10 @@
-const BASE_URL = 'https://ergast.com/api/f1/drivers.json';
+/*const BASE_URL = 'http://ergast.com/api/f1/drivers?=123';*/
 
 
-const getDrivers = () => {
-    return fetch(`${BASE_URL}`)
+const getAllDrivers = () => {
+    return fetch('http://ergast.com/api/f1/drivers?=123')
         .then((response) => response.json())
+        .then((data) => console.log(data));
             }
 
-export default getDrivers;
+export default getAllDrivers;

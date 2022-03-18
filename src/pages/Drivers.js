@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar/Navbar.js';
 import { useEffect, useState } from 'react';
 import getDrivers from '../api/api';
-import ListDrivers from '../components/listDrivers';
+import ListDrivers from '../components/ListDrivers';
 
 function DriversProfile () {
 const [profileDrivers, setprofileDrivers] = useState([]);
@@ -21,7 +21,7 @@ useEffect(() => {
 
     return (
             
-        <div className='mainhome'>
+        <div className='mainDrivers'>
                <Navbar/>
                <ListDrivers
           data={profileDrivers}
