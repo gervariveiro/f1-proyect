@@ -12,9 +12,18 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, "public")));
 
 
-const port = proces.env.PORT || 5000;
+const port = process.env.PORT || 8080;
 
 app.listen(port, () => {
-    console.log('Server ON en Puerto 5000')
+    console.log('Server ON in Port 8080')
 });
+
+//rutas
+
+const tracksRouters = require('./routes/tracks');
+
+
+//rutas app.use
+
+app.use('/tracks', tracksRouters);
 
