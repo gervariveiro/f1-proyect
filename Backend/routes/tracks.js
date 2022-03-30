@@ -3,6 +3,8 @@ const router = express.Router();
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/F1_Proyect');
 
+
+//model tracks
 const Tracks = mongoose.model('Tracks', 
     {
     name: String, 
@@ -28,8 +30,15 @@ router.post('/newtrack', async(request,response) => {
         return res;
     });
     response.json({result:result});
-    console.log('New track was created');
+    console.log('New track was added');
 });
+
+router.get('/gettracks', (req, res) => {
+    Tracks
+        .find()
+        .then((data) => res.json(data))
+});
+
 
 
 module.exports = router;

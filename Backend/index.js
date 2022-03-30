@@ -21,9 +21,10 @@ app.listen(port, () => {
 //rutas
 
 const tracksRouters = require('./routes/tracks');
+const driversRouters = require('./routes/drivers');
 
 
 //rutas app.use
 
-app.use('/tracks', tracksRouters);
-
+app.use('/tracksdb', tracksRouters);
+app.use('/driversdb', driversRouters);
