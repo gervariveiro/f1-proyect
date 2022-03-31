@@ -3,9 +3,10 @@ import React from 'react';
 
 function DataDrivers({data}) {
   
-  return (  
-    <li className="drivers">
-      <h3 className="namedrivers"> {data.givenName}</h3>
+  return ( 
+    <li className="driverslist">
+      <img className="driverimg">{data.urlImageDriver}</img>
+      <h3 className="namedrivers"> {data.name}</h3>
     </li>
   )
 }

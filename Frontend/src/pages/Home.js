@@ -7,7 +7,10 @@ import Alonso from '../assets/alonso.jpg';
 
 
 
+
 function Home () {
+
+
 
     return (
             

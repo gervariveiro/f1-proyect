@@ -8,7 +8,7 @@ function RevoF1 () {
             
            <div className='containerhome'>
                <Navbar/>
-               All tracks
+                All tracks
                <Footer/>
            </div>
     
