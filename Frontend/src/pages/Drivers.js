@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar/Navbar.js';
 import { useEffect, useState } from 'react';
+import Footer from '../components/Footer.js';
 
 function DriversProfile () {
 
@@ -23,22 +24,24 @@ const fetchApi = async () => {
             
         <div className='mainDrivers'>
                <Navbar/>
-            <ul>
+            <ul className='listadrivers'>
               {!alldrivers ? 'Cargando...' :
                alldrivers.map( (todo,index) => {
-                 return <li>
-                   {todo.name}
-                   {todo.number}
-                   <img className="flags" src={todo.url_bandera}/>
-                   <img className="drivers"src={todo.urlImageDriver}/>
-                   {todo.team}
-                   {todo.country}
-                   {todo.age}
-                   {todo.worldchamp}
+                 return<li>
+                   <ul className='driverdatos'>
+                      <img className="driversimg"src={todo.urlImageDriver} alt="conductores"/>
+                      <li>Nombre: {todo.name}</li>
+                      <li>Número: {todo.number}</li>
+                      <li>País: {todo.country} <img className="flags" src={todo.url_bandera} alt="banderas"/></li>
+                      <li>Escudería: {todo.team}</li>
+                      <li>Edad: {todo.age}</li>
+                      <li>Campeonatos ganados: {todo.worldchamp}</li>
+                    </ul>
                  </li>
                })
               }
-            </ul>  
+            </ul>
+            <Footer/> 
         </div>
     );
   };

@@ -29,10 +29,10 @@ function Navbar () {
                     <a href="" class="menu__link">Equipos</a>
                 </li>
                 <li class="menu__item">
-                    <a href="/productos" class="menu__link">Conductores</a>
+                    <a href="/drivers" class="menu__link">Conductores</a>
                 </li>
                 <li class="menu__item">
-                    <a href="/turismo" class="menu__link">Circuitos</a>
+                    <a href="/tracks" class="menu__link">Circuitos</a>
                 </li>
                 <li class="menu__item">
                     <a href="/contacto" class="menu__link">Contacto</a>

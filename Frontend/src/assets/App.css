@@ -237,3 +237,36 @@ a:visited { text-decoration:none;
     width: 850px;
 }
 
+/*----------------Drivers-------------------------*/
+
+.listadrivers{
+    display: flex;
+    flex-direction: row;
+    font-family: 'PT Sans', sans-serif;
+    padding: 20px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.driverdatos{
+    margin: 0 5px 5px 5px;
+    color: white;
+    list-style:none;
+    padding: 15px;
+    line-height: 25px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: black 1px solid;
+}
+
+.flags{
+    height: 25px;
+    width: 35px;
+    border: 2px;
+}
+
+.driversimg{
+    height: 250px;
+    width: 250px;
+}
+
