@@ -1,5 +1,5 @@
 import React from 'react';
-import f1logo from './f1logo.png';
+import f1logo from './f1logo.jpg';
 
 
 
