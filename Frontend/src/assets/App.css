@@ -43,9 +43,14 @@ width: 115px;
     background: rgb(252, 45, 28);
     height: 100px;
     width: 100%;
-    margin-left: -150%;
+    margin-top: -150%;
     transition: all 0.5s;
 }
+
+.menu_icon{
+    color: white;
+}
+
 
 .menu__item{
   margin-left: 50px;
@@ -83,7 +88,7 @@ width: 115px;
 }
 
 .mostrar{
-    margin-left: 0;
+    margin-top: 0;
 }
 
 @media(min-width:1024px){
@@ -93,8 +98,13 @@ width: 115px;
     }
 
     .menu{
-        margin-left: 0;
+        /*margin-left: 0;*/
+        margin-top: 0;
         display: flex;
+    }
+
+    .menu_icon{
+        visibility: hidden;
     }
 
     .container-submenu{
@@ -122,6 +132,9 @@ a:link { text-decoration:none;
  
 a:visited { text-decoration:none;
 };
+
+
+
 
 
 /*------------------------Home---------------------*/
