@@ -9,9 +9,7 @@ import ButtonHome from '../Buttons/Buttonhome';
 function Navbar () {
 
     return (
-
-
-        <div>
+      <div>
             <AppBar style={{ backgroundColor: '#FC2D1C' }}>
                 <Toolbar>
                     <ButtonHome/>
@@ -35,8 +33,6 @@ function Navbar () {
                 </Toolbar>
             </AppBar>
         </div>
-    
     )
-    }
-    
+}
 export default Navbar;
