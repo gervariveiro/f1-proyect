@@ -25,7 +25,7 @@ const fetchApi = async () => {
         <div className='mainDrivers'>
                <Navbar/>
                <h3 className='h3tracks'>Los circuitos están ordenados según el calendario 2022</h3>
-            <ul className='listadrivers'>
+            <ul className='listatracks'>
               {!alltracks ? 'Cargando...' :
                alltracks.map( (todo,index) => {
                  return<li>

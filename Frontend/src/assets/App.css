@@ -291,6 +291,8 @@ a:visited { text-decoration:none;
 
 /*------------------Tracks-----------------------*/
 
+
+
 .tracksimg{
     height: 200px;
     width: 250px;
@@ -298,8 +300,17 @@ a:visited { text-decoration:none;
 
 .h3tracks{
     display: inline-block;
-    margin: 30px 10% 30px 400px;
+    margin: 10% 10% 3% 35%;
     text-align: justify;
     font-family: 'Roboto', sans-serif;
     line-height: 30px;
+}
+
+.listatracks{
+    display: flex;
+    flex-direction: row;
+    font-family: 'PT Sans', sans-serif;
+    padding: 20px;
+    list-style: none;
+    flex-wrap: wrap;
 }
