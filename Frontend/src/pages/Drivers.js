@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar/Navbar.js';
 import { useEffect, useState } from 'react';
 import Footer from '../components/Footer.js';
 
-function DriversProfile () {
+function Drivers () {
 
 
 const url = 'http://localhost:8080/driversdb/getdrivers'
@@ -47,4 +47,4 @@ const fetchApi = async () => {
   };
 
 
-export default DriversProfile;
+export default Drivers;

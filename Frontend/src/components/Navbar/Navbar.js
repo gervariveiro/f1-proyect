@@ -1,22 +1,30 @@
-import React from 'react';
+import React, { useState } from "react";
 import {AppBar, Button, ThemeProvider, Toolbar, Typography} from '@material-ui/core';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faBars} from '@fortawesome/free-solid-svg-icons';
 import ButtonHome from '../Buttons/Buttonhome';
 
-
-
 function Navbar () {
 
+    const btnMenu = document.querySelector("#btnMenu");
+    const menu= document.querySelector("#menu");
+    
     return (
+<<<<<<< Updated upstream
       <div>
+=======
+
+        <div>
+>>>>>>> Stashed changes
             <AppBar style={{ backgroundColor: '#FC2D1C' }}>
                 <Toolbar>
                     <ButtonHome/>
-                    <Button id='btnmenu'>
-                        <FontAwesomeIcon icon={faBars} className='menu_icon' id="btnMenu"/>
-                    </Button>
-                    <ul class="menu" id="menu">
+                    <Button id='btnMenu'
+                    onClick={function(){
+                        menu.classList.toggle("mostrar");
+                    }}>
+                        <FontAwesomeIcon icon={faBars} className='menu_icon'/>
+                    <ul className="menu" id="menu">
                         <li class="menu__item">
                             <a href="" class="menu__link">Equipos</a>
                         </li>
@@ -30,6 +38,7 @@ function Navbar () {
                             <a href="/contacto" class="menu__link">Contacto</a>
                         </li>
                     </ul>
+                </Button>
                 </Toolbar>
             </AppBar>
         </div>
