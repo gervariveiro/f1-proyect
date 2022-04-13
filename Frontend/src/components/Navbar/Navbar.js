@@ -6,9 +6,10 @@ import ButtonHome from '../Buttons/Buttonhome';
 
 function Navbar () {
 
-    const btnMenu = document.querySelector("#btnMenu");
-    const menu= document.querySelector("#menu");
-    
+    /*const btnMenu = document.querySelector("#btnMenu");
+    const menu= document.querySelector("#menu");*/
+    const [menuVisible, setmenuVisible] = useState(false);
+
     return (
 
         <div>
@@ -17,10 +18,10 @@ function Navbar () {
                     <ButtonHome/>
                     <Button id='btnMenu'
                     onClick={function(){
-                        menu.classList.toggle("mostrar");
+                        setmenuVisible(!menuVisible);
                     }}>
                         <FontAwesomeIcon icon={faBars} className='menu_icon'/>
-                    <ul class="menu" id="menu">
+                    <ul className={menuVisible ? 'menu mostrar' : 'menu'} id="menu">
                         <li class="menu__item">
                             <a href="" class="menu__link">Equipos</a>
                         </li>
