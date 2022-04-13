@@ -10,15 +10,8 @@ function Navbar () {
     const menu= document.querySelector("#menu");
     
     return (
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      <div>
-=======
-=======
->>>>>>> Stashed changes
 
         <div>
->>>>>>> Stashed changes
             <AppBar style={{ backgroundColor: '#FC2D1C' }}>
                 <Toolbar>
                     <ButtonHome/>
@@ -27,7 +20,7 @@ function Navbar () {
                         menu.classList.toggle("mostrar");
                     }}>
                         <FontAwesomeIcon icon={faBars} className='menu_icon'/>
-                    <ul className="menu" id="menu">
+                    <ul class="menu" id="menu">
                         <li class="menu__item">
                             <a href="" class="menu__link">Equipos</a>
                         </li>
@@ -45,6 +38,8 @@ function Navbar () {
                 </Toolbar>
             </AppBar>
         </div>
+    
     )
-}
+    }
+    
 export default Navbar;
