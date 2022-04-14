@@ -17,18 +17,21 @@ width: 115px;
 }
 
 .homelogo{
-    height: 90px;
-    width: 100px;
+    margin-top: 10px;
+    height: 80px;
+    width: 90px;
   }
 
   .nav-bar{
     background:rgb(252, 45, 28);
-    padding: 20px;
-    display: block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     color: white;
     cursor: pointer;
     font-size: 10px;
     width: 100%;
+    list-style: none;
 }
 
 .menu, .submenu{
@@ -63,8 +66,8 @@ width: 115px;
     padding: 20px;
     font-family: 'Roboto', sans-serif;
     color: white;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 600;
     text-decoration: none;
 }
 
@@ -152,12 +155,16 @@ a:visited { text-decoration:none;
     text-decoration-style:none ;
 }
 
+.portadafoto{
+    width:900px;
+    height: 500px;
+}
+
 .mainhome a{
     color: black;
 }
 
 .mainhome h1{
-    margin-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;

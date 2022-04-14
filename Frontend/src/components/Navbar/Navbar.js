@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {AppBar, Button, Toolbar} from '@material-ui/core';
+import {Button} from '@material-ui/core';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faBars} from '@fortawesome/free-solid-svg-icons';
 import ButtonHome from '../Buttons/Buttonhome';
@@ -13,8 +13,7 @@ function Navbar () {
     return (
 
         <div>
-            <AppBar style={{ backgroundColor: '#FC2D1C' }}>
-                <Toolbar>
+            <span className="nav-bar">
                     <ButtonHome/>
                     <Button
                     onClick={function(){
@@ -36,8 +35,7 @@ function Navbar () {
                         </li>
                     </ul>
                 </Button>
-                </Toolbar>
-            </AppBar>
+                </span>
         </div>
     
     )
