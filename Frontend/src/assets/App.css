@@ -93,8 +93,14 @@ width: 115px;
 
 @media(min-width:1024px){
  
-    .nav-bar{
-        display: none;
+    .menumostrar{
+            display: flex;
+            flex-direction: row;
+            background: rgb(252, 45, 28);
+            height: 100px;
+            width: 100%;
+            transition: all 0.5s;
+            list-style: none;
     }
 
     .menu{
@@ -133,10 +139,9 @@ a:link { text-decoration:none;
 a:visited { text-decoration:none;
 };
 
-
-
-
-
+@media(max-width:1024px){
+    
+}
 /*------------------------Home---------------------*/
 
 /* PARA QUITAR DECORATION DE LOS LINKS a:link { text-decoration:none; } a:visited { text-decoration:none; }*/
