@@ -18,8 +18,8 @@ function Home () {
                <Navbar/>
                <section className='mainhome'>
                     <a href='/Sains'>
-                    <h1>Carlos Sains el "Outsider"</h1>
                     <img className='portadafoto' src={Portada}/>
+                    <h1 className='tituloSains'>Carlos Sains el "Outsider"</h1>
                     <p>Sains en Bahréin</p>
                     </a>
                     <h4>"No somos favoritos", dice Binotto, pero el F1-75 

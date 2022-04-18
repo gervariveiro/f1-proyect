@@ -24,9 +24,10 @@ const fetchApi = async () => {
             
         <div className='mainDrivers'>
                <Navbar/>
+               <div className='driversespacio'></div>
             <ul className='listadrivers'>
               {!alldrivers ? 'Cargando...' :
-               alldrivers.map( (todo,index) => {
+               alldrivers.map( (todo) => {
                  return<li>
                    <ul className='driverdatos'>
                       <img className="driversimg"src={todo.urlImageDriver} alt="conductores"/>
