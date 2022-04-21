@@ -334,6 +334,42 @@ a:visited { text-decoration:none;
     flex-wrap: wrap;
 }
 
+/*----------------------Teams------------------------------------------*/
+
+.teamsimg{
+    height: 150px;
+    width: 230px;
+    margin-right: 10px;
+}
+
+.carsimg{
+    height: 150px;
+    width: 250px;
+}
+
+.teamsdatos{
+    margin: 0 5px 5px 5px;
+    color: white;
+    list-style:none;
+    padding: 15px;
+    line-height: 25px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: black 1px solid;
+}
+
+.listateams{
+    display: flex;
+    flex-direction: row;
+    font-family: 'PT Sans', sans-serif;
+    padding: 20px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+
+
+
 /*----------------------Brakepoints---------------------------*/
 
 
@@ -357,6 +393,10 @@ a:visited { text-decoration:none;
 }
 
 @media(max-width:650px){
+
+    .buttonhome{
+        display: none;
+        }
 
     .mainhome img{
         margin:40% 0 0 5% ;
@@ -394,5 +434,9 @@ a:visited { text-decoration:none;
     .tracksimg{
         height: 180px;
         width: 200px;
+    }
+
+    .teamsdatos{
+        width: 300px;
     }
 }

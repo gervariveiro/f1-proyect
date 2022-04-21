@@ -9,6 +9,7 @@ import Tracks from './pages/Tracks';
 import Sains from './pages/Sains';
 import Alonsopage from './pages/Alonsopage';
 import RevoF1 from './pages/RevoF1';
+import Teams from './pages/Teams';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="Sains" element={<Sains />} />
             <Route path="Alonsopage" element={<Alonsopage />} />
             <Route path="RevoF1" element={<RevoF1 />} />
+            <Route path="Teams" element={<Teams />} />
           </Routes>
       </BrowserRouter>
     </div>

@@ -29,3 +29,57 @@ const teamsRouters = require('./routes/teams');
 app.use('/tracksdb', tracksRouters);
 app.use('/driversdb', driversRouters);
 app.use('/teamsdb', teamsRouters);
+
+
+//nodemailer
+
+app.post('/send-email', async (req, res) => {
+    const { name, email, phone, message } = req.body;
+    
+    contentHTML = `
+        <h1>User Information</h1>
+        <ul>
+            <li>Nombre: ${name}</li>
+            <li>Email: ${email}</li>
+            <li>Teléfono: ${phone}</li>
+        </ul>
+        <p>${message}</p>
+    `;
+  
+    console.log(contentHTML);
+  
+    const transporter = nodemailer.createTransport({
+        host: 'smtp.gmail.com',
+        port: 465,
+        secure: true,
+        auth: {
+            user: `gervasioriveiro@gmail.com`,
+            pass: `mgmvehfoofdurvmx`
+        },
+        tls:{
+            rejectUnauthorized: false
+        }
+    });
+  
+  /*transporter.sendMail({
+        from: 'gervasioriveiro@gmail.com',
+        to: 'gervasioriveiro@gmail.com',
+        subject: 'Mail de prueba',
+        text:'Esto es un  prueba'
+    });*/
+  
+  const info = await transporter.sendMail({
+        from: '"Server Gmail" <gervasioriveiro@gmail.com>',
+        to: 'gervasioriveiro@gmail.com',
+        subject: 'Contacto Nuevo Cliente',
+        html: contentHTML
+    })
+  
+   /* res.send('received');
+  });*/
+  
+  console.log('Message sent', info.messageId);
+  
+  res.redirect('/success.html');
+  
+  });
