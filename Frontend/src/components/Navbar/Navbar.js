@@ -31,7 +31,7 @@ function Navbar () {
                             <a href="/tracks" className="menu__link">Circuitos</a>
                         </li>
                         <li className="menu__item">
-                            <a href="/contacto" className="menu__link">Contacto</a>
+                            <a href="/contact" className="menu__link">Contacto</a>
                         </li>
                     </ul>
                 </Button>

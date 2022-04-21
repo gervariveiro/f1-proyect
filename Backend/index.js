@@ -3,7 +3,7 @@ const app = express();
 const cors = require('cors');
 const path = require('path');
 const bodyParser = require('body-parser');
-
+const nodemailer = require ('nodemailer');
 
 //set
 app.use(cors());
@@ -41,7 +41,6 @@ app.post('/send-email', async (req, res) => {
         <ul>
             <li>Nombre: ${name}</li>
             <li>Email: ${email}</li>
-            <li>Teléfono: ${phone}</li>
         </ul>
         <p>${message}</p>
     `;
