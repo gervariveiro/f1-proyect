@@ -368,7 +368,50 @@ a:visited { text-decoration:none;
 }
 
 
+/*----------------------Contact------------------------------*/
 
+.divform{
+    background-color:darkgrey;
+}
+
+.formcontact{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 2% 0 60% 20%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.formcontact label{
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.formcontact input{
+    margin-left: 10px;
+    padding: 2px;
+}
+
+.mensaje{
+    display: flex;
+    height: 250px;
+    width: 300px;
+    border-radius: 15px;
+}
+
+
+.botonenviar{
+    margin: 20px 0 30px 0;
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    font-weight: 600;
+    color: white;
+    background: rgb(252, 45, 28);
+}
 
 /*----------------------Brakepoints---------------------------*/
 
@@ -438,5 +481,25 @@ a:visited { text-decoration:none;
 
     .teamsdatos{
         width: 300px;
+    }
+
+    .mensaje{
+        height: 150px;
+        width: 250px;
+    }
+
+    .formcontact{
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+    }
+
+    .botonenviar{
+        margin: 10px;
+        width: 100px;
+        height: 30px;
+        border-radius: 15px;
+        font-family: 'Roboto', sans-serif;
+        font-size: medium;
+        font-weight: 400;
     }
 }
