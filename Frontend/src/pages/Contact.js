@@ -1,8 +1,19 @@
 import React from 'react';
 import Footer from '../components/Footer.js';
 import Navbar from '../components/Navbar/Navbar.js';
+import swal from 'sweetalert';
+
+
 
 function Contact () {
+
+    const mostrarAlert = () => { 
+        swal({
+            title: "Tu mensaje fue enviado",
+            icon: "success",
+            button: "Cerrar"
+        })
+    }
 
     return (
             
@@ -23,7 +34,7 @@ function Contact () {
                         Mensaje:
                         <input className='mensaje' type="text" name="message" placeholder='Escriba un mensaje' />
                     </label>
-                    <input className='botonenviar' type="submit" value="Enviar" />
+                    <button className='botonenviar' type="submit" value="Enviar" onClick={() => mostrarAlert()}>Enviar</button>
                 </form>
                 </div>
                 <Footer/>

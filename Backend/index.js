@@ -79,6 +79,6 @@ app.post('/send-email', async (req, res) => {
   
   console.log('Message sent', info.messageId);
   
-  res.redirect('/success.html');
+  res.redirect('http://localhost:3000/contact');
   
   });
