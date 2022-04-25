@@ -14,8 +14,8 @@ function Navbar () {
 
         <div>
             <span className="nav-bar">
-                    <ButtonHome/>
-                    <Button
+                <ButtonHome/>
+                <Button
                     onClick={function(){
                         setmenuVisible(!menuVisible);
                     }}>
@@ -35,7 +35,7 @@ function Navbar () {
                         </li>
                     </ul>
                 </Button>
-                </span>
+            </span>
         </div>
     
     )
