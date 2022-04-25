@@ -31,10 +31,10 @@ const fetchApi = async () => {
                  return<li>
                    <ul className='driverdatos'>
                       <img className="tracksimg"src={todo.urlImageTrack} alt="circuitos"/>
-                      <li>Nombre: {todo.name}</li>
-                      <li>Ciudad: {todo.city} <img className="flags" src={todo.url_bandera} alt="banderas"/></li>
-                      <li>Longitud: {todo.length}</li>
-                      <li>Curvas: {todo.turns}</li>
+                      <li className='namedata'>{todo.name}</li>
+                      <li className='pilotodata'>Ciudad: {todo.city} <img className="flags" src={todo.url_bandera} alt="banderas"/></li>
+                      <li className='pilotodata'>Longitud: {todo.length}</li>
+                      <li className='pilotodata'>Curvas: {todo.turns}</li>
                     </ul>
                  </li>
                })

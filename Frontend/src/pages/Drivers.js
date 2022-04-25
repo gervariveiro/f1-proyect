@@ -31,12 +31,12 @@ const fetchApi = async () => {
                  return<li>
                    <ul className='driverdatos'>
                       <img className="driversimg"src={todo.urlImageDriver} alt="conductores"/>
-                      <li>Nombre: {todo.name}</li>
-                      <li>Número: {todo.number}</li>
-                      <li>País: {todo.country} <img className="flags" src={todo.url_bandera} alt="banderas"/></li>
-                      <li>Escudería: {todo.team}</li>
-                      <li>Edad: {todo.age}</li>
-                      <li>Campeonatos ganados: {todo.worldchamp}</li>
+                      <li className='namedata'>{todo.name}</li>
+                      <li className='pilotodata'>Nº{todo.number}</li>
+                      <li className='pilotodata'>{todo.country} <img className="flags" src={todo.url_bandera} alt="banderas"/></li>
+                      <li className='pilotodata'>{todo.team}</li>
+                      <li className='pilotodata'>{todo.age}</li>
+                      <li className='pilotodata'>{todo.worldchamp}</li>
                     </ul>
                  </li>
                })

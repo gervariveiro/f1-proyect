@@ -32,10 +32,9 @@ const fetchApi = async () => {
                    <ul className='teamsdatos'>
                       <img className="teamsimg"src={todo.urlImageTeam} alt="Equipos"/>
                       <img className="carsimg"src={todo.urlImageCar} alt="Coches"/>
-                      <li>Nombre: {todo.name}</li>
-                      <li>Pilotos: {todo.drivers}</li>
-
-                      <li>Campeonatos de constructores ganados: {todo.constructorWorldchamps}</li>
+                      <li className='namedata'>{todo.name}</li>
+                      <li className='pilotodata'>Pilotos: {todo.drivers}</li>
+                      <li className='pilotodata'>Campeonatos de constructores ganados: {todo.constructorWorldchamps}</li>
                     </ul>
                  </li>
                })
