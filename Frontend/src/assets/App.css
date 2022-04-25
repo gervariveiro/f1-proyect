@@ -316,6 +316,8 @@ a:visited { text-decoration:none;
 .tracksimg{
     height: 200px;
     width: 250px;
+    border: rgb(199, 195, 195) 1px solid;
+    border-radius: 10px;
 }
 
 .h3tracks{
