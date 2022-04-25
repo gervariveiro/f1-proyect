@@ -28,7 +28,7 @@ function Home () {
                </section>
                <ul className='videoslista'>
                    <li>
-                       <h4>Grilla de Conductores</h4>
+                       <h4>Todos los pilotos</h4>
                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QLUA_kYbWuw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                    </li>
                    <li>
