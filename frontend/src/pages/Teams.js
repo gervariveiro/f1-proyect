@@ -6,7 +6,7 @@ import Footer from '../components/Footer.js';
 function Teams () {
 
 
-const url = 'http://localhost:8080/teamsdb/geteams'
+const url = 'https://f1backend.herokuapp.com/teamsdb/geteams'
 const [allteams, setAllTeams] = useState();
 const fetchApi = async () => {
     const response = await fetch(url);

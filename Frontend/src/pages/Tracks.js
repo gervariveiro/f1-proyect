@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 function Tracks () {
 
 
-const url = 'http://localhost:8080/tracksdb/gettracks'
+const url = 'https://f1backend.herokuapp.com/tracksdb/gettracks'
 const [alltracks, setAllTracks] = useState();
 const fetchApi = async () => {
     const response = await fetch(url);

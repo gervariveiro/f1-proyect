@@ -6,7 +6,9 @@ import Footer from '../components/Footer.js';
 function Drivers () {
 
 
-const url = 'http://localhost:8080/driversdb/getdrivers'
+const url = 'https://f1backend.herokuapp.com//getdrivers'
+
+//local = http://localhost:8080/driversdb/getdrivers
 const [alldrivers, setAlldrives] = useState();
 const fetchApi = async () => {
     const response = await fetch(url);
