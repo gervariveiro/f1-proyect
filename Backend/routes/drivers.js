@@ -1,8 +1,14 @@
 const  express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/F1_Proyect');
 
+const user ='gerva141';
+const password ='vVSwBJfRONSKMnja';
+const dbname ='f1-proyect';
+
+mongoose.connect(`mongodb+srv://${user}:${password}@cluster0.zxcji.mongodb.net/${dbname}?retryWrites=true&w=majority`);
+
+//connect local : mongoose.connect('mongodb://localhost:27017/F1_Proyect');
 
 //model drivers
 
